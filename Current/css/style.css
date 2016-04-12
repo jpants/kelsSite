@@ -1,0 +1,733 @@
+html, body, #container {
+	min-height: 100%;
+	min-width: 320px;
+}
+
+body {
+	color: #A9BCC2;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Dosis", sans-serif;
+}
+
+#imageContainer {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	z-index: -10;
+	overflow: hidden;
+}
+
+#imageContainer2 {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	z-index: -10;
+	overflow: hidden;
+}
+
+.bgImage {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 100%;	
+	z-index: -10;
+}
+
+#bgImage4 {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	z-index: -10;
+}
+
+#homeImage {
+	position: relative;
+	background-image: url("../images/KelsHomeImage-6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+#linkBoxImage {
+	position: relative;
+	background-image: url('../images/OldPianoKeys1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*min-height: 100%;*/
+}
+
+#elseImage {
+	position: relative;
+	background-image: url("../images/KelsHomeImage-4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+#socialPosts {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+}
+
+.circles {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.socialLogos {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	width: 30px;
+	height: 30px;
+}
+
+@media (min-width: 630px) {
+	#socialPosts {
+		bottom: initial;
+		width: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+}
+
+#pintCircle {
+	background-color: #d01d15;
+}
+
+.socLogPint {
+	background-image: url('../images/pinterest-white-60.png');
+}
+
+#fbCircle {
+	background-color: #3a5795;
+}
+
+.socLogFb {
+	background-image: url('../images/facebook-white-60.png');
+}
+
+#twitCircle {
+	background-color: #55acee;
+}
+
+.socLogTwit {
+	background-image: url('../images/twitter-white-60.png');
+}
+
+#emailCircle {
+	background-color: lightgrey;
+}
+
+.socLogEmail {
+	background-image: url('../images/email-white-60.png');
+}
+
+.socLogInsta {
+	background-image: url('../images/instagram-white-60.png');
+}
+
+.socLogSCloud {
+	background-image: url('../images/soundcloud-white-60.png');
+}
+
+#navWrapper {
+	display: table;
+	color: white;
+	padding: 20px 20px 20px 40px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#bigName {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	display: table-cell;
+	font-size: 72px;
+	letter-spacing: -3px;
+	width: 40%;
+}
+
+@media (min-width: 679px) {
+	#bigName {
+		padding-left: 10px;
+	}
+}
+
+@media (min-width: 697px) {
+	#bigName {
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 716px) {
+	#bigName {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 735px) {
+	#bigName {
+		padding-left: 40px;
+	}
+}
+
+#menuButton{
+	display: block;
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	background-image: url('../images/menu-icon.png');
+	background-repeat: no-repeat;
+	background-size: 30px auto;
+	background-position: center;
+	height: 35px;
+	width: 35px;
+	top: 14px;
+	right: 15px;
+	border-radius: 7px;
+	z-index: 140;
+	box-shadow: 0px 0px 8px #000000;
+}
+
+#menuButton:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 659px) {
+	#nav {
+		display: none;
+		position: absolute;
+		top: 62px;
+		right: 0px;
+		z-index: 139;
+		line-height: 70px;
+		margin: 0px;
+		padding: 0px;
+		/*background-color: rgba(0,0,0,.85);*/
+		/*border-radius: 7px 0px 0px 7px;*/
+	}
+
+	#menuList li {
+		display: list-item;
+		padding: 0px 50px 0px 35px;
+		margin: 2px 0px;
+		color: white;
+		background-color: grey;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 19px;
+		box-shadow: 0px 0px 8px 3px rgba(0,0,0,.6);
+	}
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+@media (min-width: 660px) {
+	#menuButton {
+		display: none;
+	}
+
+	#nav {
+		display: table-cell;
+		width: 65%;
+		text-align: right;
+		vertical-align: middle;
+	}
+
+	#menuList {
+		margin: 0px;
+		float: right;
+	}
+
+	#menuList li {
+		font-family: 'Ubuntu', sans-serif;
+		display: inline-block;
+		margin: 7px 0px 7px 35px;
+		color: white;
+		letter-spacing: 2px;
+		font-size: 15px;
+		text-shadow: 0px 0px 8px #000000;
+	}
+
+}
+
+#home {
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding: 0px 15px;
+}
+
+#elseHome {
+	height: 70%;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding: 0px 15px;
+}
+
+#banner {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 80px;
+	font-weight: 200;
+}
+
+@media (min-width: 665px) {
+	#banner {
+		font-size: 85px;
+	}
+}
+
+@media (min-width: 700px) {
+	#banner {
+		font-size: 90px;
+	}
+}
+
+@media (min-width: 735px) {
+	#banner {
+		font-size: 95px;
+	}
+}
+
+@media (min-width: 770px) {
+	#banner {
+		font-size: 100px;
+	}
+}
+
+@media (min-width: 805px) {
+	#banner {
+		font-size: 105px;
+	}
+}
+
+#mainHome {
+	width: 100%;
+	height: 100%;
+	/*overflow: auto;*/
+}
+
+#blockContainer {
+	position: relative;
+	padding: 12px 40px;
+	box-sizing: border-box;
+	width:100%;
+	text-align: center;
+}
+
+.daBlock {
+	background-color: lightgrey;
+	display: inline-block;
+	width: 100%;
+	max-width: 325px;
+	margin: 4%;
+	color: black;
+	text-align: initial;
+}
+
+.daBlock h1 {
+	position: relative;
+}
+
+@media (min-width: 630px) {
+	.daBlock {
+		width: 43%;
+		max-width: 375px;
+		margin: 3%;
+	}
+
+	#blockContainer {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@media (min-width: 1000px) {
+	.daBlock {
+		width: 29%;
+		max-width: 400px;
+		margin: 4% 2%;
+
+	}
+}
+
+#block1 {
+	background-color: white;
+	background-image: url('../images/stickGirl.jpg');
+	background-size: 28% 50%;
+	background-repeat: no-repeat;
+	background-position: 97% 85%;
+}
+
+#block1 h1 {
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 3em;
+	width: 90%;
+	margin: 8px 15px;
+}
+
+#block2 {
+	background-color: white;
+	background-image: url('../images/pianoStrings.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#block2 h1 {
+	display: block;
+	float: left;
+	font-size: 4em;
+	top: 26%;
+	left: 20%;
+	color: white;
+}
+
+#block3 {
+	background-color: white;
+	background-image: url('../images/changeTree.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: right;
+}
+
+#block3 h1 {
+	position: relative;
+	display: block;
+	float: right;
+	font-size: 4em;
+	width: 220px;
+	color: white;
+	top: -2%;
+	right: 10px;
+}
+
+#block4 {
+	background-color: white;
+	background-image: url('../images/bioBlock.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+#block4 h1 {
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 4em;
+	width: 220px;
+	color: white;
+	margin: 0px 25px;
+	top: 48%;
+}
+
+#block5 {
+	background-color: white;
+	background-image: url('../images/thoseColor2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+#block5 h1 {
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 3em;
+	width: 180px;
+	color: white;
+	margin: 0px 30px;
+	top: 15%;
+}
+
+#block6 {
+	background-color: white;
+	background-image: url('../images/coffee-guitar.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+#block6 h1 {
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 3em;
+	width: 180px;
+	color: white;
+	margin: 0px 30px;
+	top: 15%;
+}
+
+/****************
+Blog
+****************/
+
+#homeBlog {
+	height: 70%;
+	color: white;
+	margin: 0px;
+}
+
+#mainBlog {
+	background-color: rgb(224,224,224);
+	color: black;
+	position: relative;
+	padding: 50px 80px;
+	z-index: 0;
+}
+
+#mainBlog table {
+	margin: 30px 0px;
+}
+
+.titleBlog {
+	width: 30%;
+	vertical-align: top;
+	font-size: 50px;
+	padding: 0px 20px;
+	text-align: right;
+}
+
+.articleBlog {
+	width: 70%;
+	line-height: 1.5em;
+}
+
+.blogRoom {
+	padding: 20px 0px;
+}
+
+/*****************
+Songs
+*****************/
+
+#mainSongs {
+	background-color: rgb(224,224,224);
+	color: black;
+	position: relative;
+	padding: 50px 80px;
+	z-index: 0;
+}
+
+.song h1 {
+	display: block;
+	font-size: 2em;
+	margin: 30px 20px 10px;
+}
+
+.song p {
+	display: block;
+	margin: 0px 20px;
+}
+
+.song audio {
+	margin: 30px 60px;
+}
+
+/*****************
+Bio
+*****************/
+
+#mainBio {
+	background-color: rgb(224,224,224);
+	color: black;
+	position: relative;
+	padding: 50px 80px;
+	z-index: 0;
+}
+
+#mainBio table {
+	margin: 30px 0px;
+}
+
+#titleBio {
+	width: 30%;
+	vertical-align: top;
+	font-size: 50px;
+	padding: 0px 20px;
+	text-align: right;
+}
+
+#articleBio {
+	width: 70%;
+	line-height: 1.5em;
+}
+
+/*****************
+Contact
+*****************/
+
+#mainContact {
+	background-color: rgb(224,224,224);
+	color: black;
+	padding: 50px 80px;
+	z-index: 0;
+}
+
+#titleContact {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+	margin: 30px 0px 20px;
+}
+
+#textContact {
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	width: 75%;
+	line-height: 1.5em;
+}
+
+#tableContact {
+	font-family: "Dosis", sans-serif;
+	text-align: center;
+	margin: 20px auto;
+	width: 75%;
+}
+
+#fNameContact {
+	font-family: "Dosis", sans-serif;
+	line-height: 35px;
+	font-size: 18px;
+	width: 100%;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+#lNameContact {
+	font-family: "Dosis", sans-serif;
+	line-height: 35px; 
+	font-size: 18px; 
+	width: 100%;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.spacerContact {
+	line-height: 20px;
+}
+
+#emailContact {
+	font-family: "Dosis", sans-serif;
+	line-height: 35px;
+	font-size: 18px;
+	width: 100%;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+#commentContact {
+	font-family: "Dosis", sans-serif;
+	line-height: 35px;
+	font-size: 18px;
+	width: 100%;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+#submitBtnContact {
+	margin: 20px 0px 30px;
+	padding: 0px 15px;
+	font-family: "Dosis", sans-serif;
+	line-height: 35px;
+	font-size: 18px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+
+
+/*****************
+Footer
+*****************/
+
+footer {
+	background-color: black;
+	padding: 0px 0px 60px 0px;
+	text-align: center;
+}
+
+#footerStuff {
+	padding: 50px 50px 0px;
+	text-align: center;
+}
+
+#emailInput {
+	display: inline-block;
+	/*width: 100%;*/
+	text-align: center;
+}
+
+#email {
+	position: relative;
+	display: inline-block;
+	margin: 5px 2.5px;
+	/*bottom: 5px;*/
+}
+
+#emailSubmit {
+	position: relative;
+	display: inline-block;
+	margin: 0px 2.5px 5px;
+	/*bottom: 5px;*/
+}
+
+#copyright {
+	display: inline-block;
+	margin: 5px 0px;
+	/*float: right;*/
+}
+
+#socialLinks {
+
+}
+
+.socLink {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+}
+
+.socLinkLogo {
+
+	width: 20px;
+	height: 20px;
+}
+
+@media (min-width: 755px) {
+	#copyright {
+		float: right;
+	}
+
+	#footerStuff {
+		text-align: left;
+		padding-bottom: 20px;
+	}
+}
